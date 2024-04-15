@@ -16,6 +16,7 @@ type TokenizeMode int
 const (
 	DefaultMode TokenizeMode = iota
 	SearchMode
+	CutAllMode
 )
 
 type Word struct {

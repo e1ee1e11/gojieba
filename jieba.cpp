@@ -98,6 +98,9 @@ Word* Tokenize(Jieba x, const char* sentence, TokenizeMode mode, int is_hmm_used
     case SearchMode:
       ((cppjieba::Jieba*)x)->CutForSearch(sentence, words, is_hmm_used);
       return ConvertWords(words);
+    case CutAllMode:
+      ((cppjieba::Jieba*)x)->CutAll(sentence, words);
+      return ConvertWords(words);
     default:
       ((cppjieba::Jieba*)x)->Cut(sentence, words, is_hmm_used);
       return ConvertWords(words);

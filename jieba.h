@@ -14,6 +14,7 @@ typedef struct {
 typedef enum {
   DefaultMode = 0,
   SearchMode = 1,
+  CutAllMode = 2,
 } TokenizeMode;
 
 Jieba NewJieba(const char* dict_path,
