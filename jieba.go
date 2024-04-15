@@ -1,7 +1,7 @@
 package gojieba
 
 /*
-#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall  -Wno-deprecated
+#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall -Wno-deprecated -Wno-unused-but-set-variable
 #include <stdlib.h>
 #include "jieba.h"
 */
